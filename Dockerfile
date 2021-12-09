@@ -9,7 +9,7 @@ mkdir /opt/sh/aux && \
 tar -xf /opt/sh/openresty-1.19.9.1.tar.gz -C /opt/sh/aux --strip-components 1 && \
 rm -rf /opt/sh/openresty-1.19.9.1.tar.gz && \
 cd /opt/sh/aux && \
-yum install -y perl pcre-devel openssl-devel zlib-devel && \
+dnf install -y perl pcre-devel openssl-devel zlib-devel && \
 mkdir /opt/sh/openresty && \
 ./configure --prefix=/opt/sh/openresty && \
 gmake && \
